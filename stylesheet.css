@@ -1,0 +1,93 @@
+body{
+    background-color: rgba(128, 128, 128, 0.532);
+}
+#container{
+    background-color:#0165e1;
+    color:white;
+    background: linear-gradient(#0165e1,#17A9FD);
+    width:400px;
+    padding:20px 20px;
+    margin-left:auto;
+    margin-right:auto ;
+    margin-top:125px;
+    border-radius:15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.innerBody{
+    display: table-row;
+}
+
+.innerBody label{
+    display: table-cell;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-left: 20px ;
+}   
+.innerBody input{
+    display: table-cell;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+    border: 2px black solid;
+}
+.innerBody input:hover{
+    opacity: 0.9;
+    background-color: wheat
+}
+#name{
+    display: table-cell;
+    margin: 10px;
+}
+#DateOfBirth{
+    display: table-cell;
+    margin: 10px;
+}
+#mobno{
+    display: table-cell;
+    margin: 10px;
+}
+#pass{
+    display: table-cell;
+    margin: 10px;
+}
+#submit{
+    font-size:medium;
+    margin-top: 25px;
+    padding:8px 16px;
+    border: 2px solid;    
+}
+#submit:hover{
+    background-color:aquamarine;
+    font-weight: bolder;
+    color:black;
+    margin-top: 25px;
+    padding:8px 16px;
+    border: 2px solid white;    
+}
+#oput{
+    color:red;
+    font-size:large;
+    font-weight: bolder;
+    background-color: yellow;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: blinking 1s infinite;
+    border-radius: 3px;
+
+}
+@keyframes blinking{
+    0%{
+        color: red;
+    }
+    47%{
+        color:red;
+    }
+    62%{
+        color: transparent;
+    }87%{
+        color:red;
+    }
+    100%{
+        color:red;
+    }
+}
