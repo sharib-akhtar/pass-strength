@@ -22,37 +22,8 @@ function testOfStrength()
     }
     else if(data2.length>=8)
     {
-            stop: for(let i=0;i<arr.length;i++)
-            {
-                for(let j=0;j<data2.length;j++)
-                {
-                    if(arr[i].localeCompare(data2[j])==0)
-                    {
-                        m=1;
-                        break stop;             
-                    }
-                }
-            }
-            next:for(let i=0;i<arr.length;i++)
-            {
-                for(let j=0;j<data2.length;j++)
-                {
-                    if(arr[i].localeCompare(data2[j])==0)
-                    {
-                        m=1;
-                        break next;
-                    }
-                }
-            }
-            if(k==0 && m==0)
-                {
-                    const newElement=document.createElement('p');
-                    const newText=document.createTextNode("Your Password is  Weak!!!\n It should be a combination of numbers and special characters");
-                    oput.append(newElement);
-                    newElement.appendChild(newText);
-
-                }
-            else if(data1.localeCompare(data2)==0)
+            
+             if(data1.localeCompare(data2)==0)
             {
                 const newElement=document.createElement('p');
                 const newText=document.createTextNode("Your Password is Quite Weak!!!\n It should not be your name");
@@ -73,6 +44,41 @@ function testOfStrength()
                 oput.append(newElement);
                 newElement.appendChild(newText);
             }
+                 stop: for(let i=0;i<arr.length;i++)
+            {
+                for(let j=0;j<data2.length;j++)
+                {
+                    if(arr[i].localeCompare(data2[j])==0)
+                    {
+                        m=1;
+                        break stop;             
+                    }
+                }
+            }
+            
+            next:for(let i=0;i<arr.length;i++)
+            {
+                for(let j=0;j<data2.length;j++)
+                {
+                    if(arr[i].localeCompare(data2[j])==0)
+                    {
+                        m=1;
+                        break next;
+                    }
+                }
+            }
+             
+          else if(k==0 && m==0)
+                {
+                    const newElement=document.createElement('p');
+                    const newText=document.createTextNode("Your Password is  Weak!!!\n It should be a combination of numbers and special characters");
+                    oput.append(newElement);
+                    newElement.appendChild(newText);
+
+                }
+                
+            
+                
             else{
                 const newElement=document.createElement('p');
                 const newText=document.createTextNode("Your Password holds good strength...Congrats");
