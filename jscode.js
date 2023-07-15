@@ -13,14 +13,14 @@ function testOfStrength()
     const arr=['!','@','#','$','&','(',')','/','[',']','{','}'];
     const arr1=['1','2','3','4','5','6','7','8','9','0'];
     //data4=data4.toString();
-    if(data2.length<8){
+    if(data2.length<=7){
 
         const newElement=document.createElement('p');
         const newText=document.createTextNode("Your Password is  Weak!!!\n It should contain more than 8 characters");
         oput.append(newElement);
         newElement.appendChild(newText);
     }
-    else if(data2.length>=8)
+    else 
     {
             
              if(data1.localeCompare(data2)==0)
@@ -44,6 +44,7 @@ function testOfStrength()
                 oput.append(newElement);
                 newElement.appendChild(newText);
             }
+        else{
                  stop: for(let i=0;i<arr.length;i++)
             {
                 for(let j=0;j<data2.length;j++)
@@ -68,7 +69,7 @@ function testOfStrength()
                 }
             }
              
-          else if(k==0 && m==0)
+           if(k==0 && m==0)
                 {
                     const newElement=document.createElement('p');
                     const newText=document.createTextNode("Your Password is  Weak!!!\n It should be a combination of numbers and special characters");
@@ -86,5 +87,6 @@ function testOfStrength()
                 newElement.appendChild(newText);
 
             }
+        }
     }   
 }
