@@ -69,7 +69,7 @@ function testOfStrength()
                 }
             }
              
-           if((k==0 && m==0) ||(k==0 || m==0)) 
+           if(k==0 && m==0) 
                 {
                     const newElement=document.createElement('p');
                     const newText=document.createTextNode("Your Password is  Weak!!!\n It should be a combination of numbers and special characters");
@@ -77,9 +77,6 @@ function testOfStrength()
                     newElement.appendChild(newText);
 
                 }
-                
-            
-                
             else{
                 const newElement=document.createElement('p');
                 const newText=document.createTextNode("Your Password holds good strength...Congrats");
